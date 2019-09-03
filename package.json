@@ -1,0 +1,23 @@
+{
+  "name": "studies-mq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvenewour/studies-mq.git"
+  },
+  "author": "Alla Romanenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gvenewour/studies-mq/issues"
+  },
+  "homepage": "https://github.com/gvenewour/studies-mq#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
