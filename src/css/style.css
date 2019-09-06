@@ -41,7 +41,7 @@ body {
   padding-top: 33px;
   padding-bottom: 84px;
 
-  background: url("../img/header/football_767.jpg") top center no-repeat;
+  background: #090c35 url("../img/header/football_767.jpg") top/cover no-repeat;
 }
 
 .header::after {
