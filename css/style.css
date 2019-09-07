@@ -231,6 +231,10 @@ body {
 }
 
 .subsections-list {
+  position: relative;
+  top: -70px;
+
+
   list-style: none;
   counter-reset: subsections-counter;
 }
@@ -255,6 +259,10 @@ body {
 .subsection {
   padding-top: 60px;
   padding-bottom: 53px;
+}
+
+.subsection:first-child {
+  padding-top: 83px;
 }
 
 .subsection:nth-child(odd)::after {
