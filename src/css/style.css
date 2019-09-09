@@ -175,9 +175,6 @@ body {
 
 .thumbnail {
   position: relative;
-
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .athletes__thumbnail {
@@ -185,13 +182,6 @@ body {
 
   width: 192px;
   height: 281px;
-}
-
-.players__thumbnail {
-  left: -11px;
-
-  width: 302px;
-  height: 248px;
 }
 
 .text {
@@ -284,9 +274,7 @@ body {
 
   font-size: 14px;
   font-weight: 700;
-}
 
-.athletes .title_subsection::before {
   color: var(--color-text);
 }
 
@@ -316,6 +304,15 @@ body {
   margin-bottom: 21px;
 }
 
+.players__thumbnail-wrap {
+  height: 248px;
+}
+
+.players__thumbnail {
+  position: absolute;
+  left: -11px;
+}
+
 .players__subsections {
   --players-offset: -28px;
 
@@ -328,6 +325,6 @@ body {
   background-color: var(--bg-players-final-section);
 }
 
-.players .title_subsection::before {
+.players .subsection:last-child .title_subsection::before {
   color: var(--bg-common);
 }
