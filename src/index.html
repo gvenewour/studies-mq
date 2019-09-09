@@ -48,9 +48,9 @@
   <main>
     <section class="athletes">
       <div class="container">
-        <h2 class="title title_section">Athletes</h2>
-        <div class="athletes__img-block">
-          <picture class="athletes__img">
+        <h2 class="title title_section athletes__title">Athletes</h2>
+        <div class="athletes__thumbnail-wrap">
+          <picture class="thumbnail athletes__thumbnail">
             <source
               media="(max-width: 767px)"
               srcset="img/athletes/footballer_192.png">
@@ -63,7 +63,7 @@
             <img  src="img/athletes/footballer_192.png" alt="Footballer image">
           </picture>
         </div>
-        <ol class="subsections-list">
+        <ol class="subsections athletes__subsections">
           <li class="subsection">
             <h3 class="title title_subsection">Connection</h3>
             <p class="text athletes__text">Connect with coaches directly, you can ping coaches to view profile.</p>
@@ -76,9 +76,46 @@
             <h3 class="title title_subsection">Growth</h3>
             <p class="text text_contrast athletes__text">Resources and tools for you to get better as a student Athlete. Access to training classes, tutor sessions, etc</p>
           </li>
+        </ol>
+        <!-- .subsections-list -->
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .athletes -->
+
+    <section class="players">
+      <div class="container">
+        <h2 class="title title_section players__title">Players</h2>
+        <div class="players__thumbnail-wrap">
+          <picture class="thumbnail players__thumbnail">
+            <source
+              media="(max-width: 767px)"
+              srcset="img/players/basketballer_302.png">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/players/basketballer_436.png">
+            <source
+              media="(min-width: 1400px)"
+              srcset="img/players/basketballer_991.png">
+            <img src="img/players/basketballer_302.png" alt="Basketballer image">
+          </picture>
         </div>
-      </ol>
-      <!-- subsections-list -->
+        <ol class="subsections players__subsections">
+          <li class="subsection">
+            <h3 class="title title_subsection">Connection</h3>
+            <p class="text players__text">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
+          </li>
+          <li class="subsection">
+            <h3 class="title title_subsection">Collaboration</h3>
+            <p class="text players__text">Work with recruiter to increase your chances of finding a talented athlete.</p>
+          </li>
+          <li class="subsection">
+            <h3 class="title title_subsection">Growth</h3>
+            <p class="text text_contrast players__text">Save your time, recruit proper athlets for your team.</p>
+          </li>
+        </ol>
+        <!-- .subsections-list -->
+      </div>
     </section>
   </main>
 </body>
