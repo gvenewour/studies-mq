@@ -30,6 +30,8 @@
   --header-title-fsz_mobile: 28px;
   --section-title-fsz_mobile: 50px;
   --section-subtitle-fsz_mobile: 23px;
+  --subsection-paragraph-fsz_mobile: 15px;
+  --benefits-paragraph-fsz_mobile: 16px;
 
   --btn-fsz_mobile: 8px;
 
@@ -38,12 +40,14 @@
 
   --color-text: #000000;
   --color-text-contrast: #ffffff;
+  --color-benefits-counter: #f5f6f7;
 
   --bg-common: #5e42b0;
   --bg-header-overlay: #090c35;
   --bg-players-final-section: #090c35;
   --bg-subsection-odd: #fafafa;
   --bg-subsection-even: #f5f4f9;
+  --bg-benefits-counter: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -187,17 +191,20 @@ body {
 .text {
   color: var(--color-text);
 
-  font-size: 15px;
+  font-size: var(--subsection-paragraph-fsz_mobile);
 }
 
 .text_contrast {
   color: var(--color-text-contrast);
 }
 
-.subsections {
+.list {
+  list-style: none;
+}
+
+.subsections, .benefits {
   position: relative;
 
-  list-style: none;
   counter-reset: subsections-counter;
 }
 
@@ -227,6 +234,8 @@ body {
 }
 
 .subsection {
+  display: block;
+
   padding-top: 60px;
   padding-bottom: 53px;
 }
@@ -292,7 +301,7 @@ body {
   border: 2px solid var(--bg-common);
 }
 
-.athletes__text {
+.subsection__text {
   margin-top: 27px;
 }
 
@@ -327,4 +336,77 @@ body {
 
 .players .subsection:last-child .title_subsection::before {
   color: var(--bg-common);
+}
+
+.benefits__item {
+  display: block;
+
+  counter-increment: subsections-counter;
+}
+
+.benefits__thumbnail-wrap {
+  position: relative;
+}
+
+.benefits__thumbnail-wrap::before {
+  content: "0"counter(subsections-counter);
+
+  position: absolute;
+  z-index: 2;
+  bottom: -12px;
+  left: 20px;
+
+  width: 70px;
+  height: 70px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 70px;
+  vertical-align: middle;
+  text-align: center;
+
+  color: var(--color-benefits-counter);
+  background-color: var(--bg-common);
+}
+
+.benefits__thumbnail-wrap::after {
+  content: "";
+
+  position: absolute;
+  z-index: 2;
+
+  position: absolute;
+  left: 47px;  /*20px + 70px/2 - 8px*/
+  bottom: 9px;
+
+  width: 12px;
+  border-radius: 2px;
+  border: 2px solid var(--bg-benefits-counter);
+}
+
+/* .benefits__thumbnail {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+} */
+
+.benefits__fallback {
+  width: 100%;
+}
+
+.benefits__content {
+  padding-top: 23px;
+  padding-bottom: 77px;
+}
+
+.title_benefits {
+  font-size: var(--header-title-fsz_mobile);
+}
+
+.text_benefits {
+  font-size: var(--benefits-paragraph-fsz_mobile);
+}
+
+.benefits__text {
+  margin-top: 23px;
 }
