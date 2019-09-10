@@ -105,8 +105,8 @@ body {
 }
 
 .header__title-wrap { 
-  padding-top: 136px;
-  padding-bottom: 89px;
+  padding-top: 127px;
+  padding-bottom: 78px;
 
   font-size: var(--header-title-fsz_mobile);
 }
@@ -127,9 +127,9 @@ body {
 .header__title {
   display: block;
 
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
-  letter-spacing: 1.54px;
+  letter-spacing: 1.55px;
 }
 
 .header__subtitle {
@@ -142,7 +142,7 @@ body {
 .link_cta {
   display: block;
 
-  padding: 3px 83px;
+  padding: 4px 83px;
 
   font-size: var(--btn-fsz_mobile);
 
@@ -153,7 +153,7 @@ body {
 }
 
 .link_cta + .link_cta {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .link__content {
@@ -168,14 +168,12 @@ body {
   margin-right: 10px;
 }
 
-/* =============================================== */
-
 .athletes {
-  padding-top: 25px;
+  padding-top: 9px;
 }
 
 .athletes__title {
-  margin-bottom: 19px;
+  margin-bottom: 3px;
 }
 
 .athletes__thumbnail-wrap {
@@ -214,7 +212,7 @@ body {
 }
 
 .athletes__subsections {
-  --athletes-offset: -70px;
+  --athletes-offset: -80px;
 
   top: var(--athletes-offset);
 
@@ -307,7 +305,9 @@ body {
 }
 
 .subsection__text {
-  margin-top: 27px;
+  margin-top: 19px;
+
+  line-height: 1.2;
 }
 
 .players {
@@ -315,7 +315,7 @@ body {
 }
 
 .players__title {
-  margin-bottom: 21px;
+  margin-bottom: 7px;
 }
 
 .players__thumbnail-wrap {
@@ -328,7 +328,7 @@ body {
 }
 
 .players__subsections {
-  --players-offset: -28px;
+  --players-offset: -36px;
 
   top: var(--players-offset);
 
@@ -358,7 +358,7 @@ body {
 
   position: absolute;
   z-index: 2;
-  bottom: -12px;
+  bottom: -6px;
   left: 20px;
 
   width: 70px;
@@ -382,25 +382,19 @@ body {
 
   position: absolute;
   left: 47px;  /*20px + 70px/2 - 8px*/
-  bottom: 9px;
+  bottom: 15px;
 
   width: 12px;
   border-radius: 2px;
   border: 2px solid var(--bg-benefits-counter);
 }
 
-/* .benefits__thumbnail {
-  width: 100%;
-  max-width: 640px;
-  height: auto;
-} */
-
 .benefits__fallback {
   width: 100%;
 }
 
 .benefits__content {
-  padding-top: 23px;
+  padding-top: 18px;
   padding-bottom: 77px;
 }
 
@@ -413,13 +407,13 @@ body {
 }
 
 .benefits__text {
-  margin-top: 23px;
+  margin-top: 10px;
 }
 
 .footer {
   position: relative;
 
-  padding-top: 99px;
+  padding-top: 94px;
   padding-bottom: 10px;
 
   background: var(--bg-header-overlay) url("../img/footer/game_767.jpg") top/cover no-repeat;
@@ -445,8 +439,8 @@ body {
 }
 
 .footer__title-wrap {
-  padding-top: 59px;
-  padding-bottom: 76px;
+  padding-top: 47px;
+  padding-bottom: 71px;
 }
 
 .title_footer {
