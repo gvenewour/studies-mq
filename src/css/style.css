@@ -28,12 +28,17 @@
 
 :root {
   --header-title-fsz_mobile: 28px;
+  --header-title-fsz_tablet: 64px;
   --section-title-fsz_mobile: 50px;
+  --section-title-fsz_tablet: 80px;
   --section-subtitle-fsz_mobile: 23px;
+  --section-subtitle-fsz_tablet: 32px;
   --subsection-paragraph-fsz_mobile: 15px;
+  --subsection-paragraph-fsz_tablet: 16px;
   --benefits-paragraph-fsz_mobile: 16px;
 
   --btn-fsz_mobile: 8px;
+  --btn-fsz_tablet: 14px;
 
   --color-section-title: #e7e7e7;
   --color-section-text-title: #c1c1c1;
@@ -50,6 +55,8 @@
   --bg-subsection-odd: #fafafa;
   --bg-subsection-even: #f5f4f9;
   --bg-benefits-counter: rgba(255, 255, 255, 0.3);
+
+  --athletes-top-offset_mobile: -80px;
 }
 
 body {
@@ -107,8 +114,6 @@ body {
 .header__title-wrap { 
   padding-top: 127px;
   padding-bottom: 78px;
-
-  font-size: var(--header-title-fsz_mobile);
 }
 
 .title {
@@ -117,6 +122,8 @@ body {
 }
 
 .title_header {
+  font-size: var(--header-title-fsz_mobile);
+
   color: var(--color-text-contrast);
 }
 
@@ -212,11 +219,9 @@ body {
 }
 
 .athletes__subsections {
-  --athletes-offset: -80px;
+  top: var(--athletes-top-offset_mobile);
 
-  top: var(--athletes-offset);
-
-  margin-bottom: var(--athletes-offset);
+  margin-bottom: var(--athletes-top-offset_mobile);
 }
 
 .subsection {
@@ -226,14 +231,16 @@ body {
 }
 
 .subsection::after {
+  --margin-corrections: calc((-1)*(100vw - 100%)/2);
+
   content: "";
 
   position: absolute;
   z-index: -1;
   top: 0;
-  left: -7.143%; /* 20px при контейнере в 280px и общем 320px*/
+  left: var(--margin-corrections);
   bottom: 0;
-  right: -7.143%;
+  right: var(--margin-corrections);
 }
 
 .subsection {
@@ -297,9 +304,10 @@ body {
   left: 0;
   bottom: 6px;
 
-  font-size: 14px;
-
   width: 12px;
+
+  /* font-size: 14px; */
+
   border-radius: 2px;
   border: 2px solid var(--bg-common);
 }
@@ -466,4 +474,139 @@ body {
 
 .footer__cta-wrap {
   margin-bottom: 82px;
+}
+
+@media(min-width: 768px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 91px;
+
+    /* bg stays the same */
+  }
+
+  .container {
+    width: 91.7%; /* 704px */
+  }
+
+  .logo_main {
+    width: 205px;
+    height: 56px;
+  }
+
+  .header__title-wrap { 
+    padding: 160px 58px 299px 51px;
+  }
+
+  .title_header {
+    font-size: var(--header-title-fsz_tablet);
+  }
+
+  .header__title {
+    margin-bottom: 0;
+
+    line-height: 1.3;
+    letter-spacing: 3.52px;
+  }
+
+  .header__subtitle {
+    line-height: 1.2;
+  }
+
+  .cta-wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link_cta {
+    flex-basis: 50%;
+    max-width: 311px;
+
+    padding: 16px 41px;
+    
+    font-size: var(--btn-fsz_tablet);
+
+    border-radius: 41px;
+  }
+
+  .link_cta + .link_cta {
+    margin-top: 0;
+  }
+
+  .link__icon {
+    width: 36px;
+    height: 42px;
+
+    margin-right: 23px;
+  }
+
+  .athletes {
+    padding-top: 60px;
+  }
+
+  .title_section {
+    font-size: var(--section-title-fsz_tablet);
+  }
+
+  .athletes__title {
+    margin-bottom: 0;
+  }
+
+  .athletes__thumbnail-wrap {
+    position: absolute;
+
+    top: 35px;
+    left: -247px;
+
+    overflow-x: hidden;
+  }
+
+  .athletes__subsections {
+    position: static;
+  }
+
+  .athletes__subsection, .athletes__title {
+    padding-left: 259px;
+  }
+
+  .subsection {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+
+  .subsection:first-child {
+    padding-top: 25px;
+  }
+
+  .subsection:nth-child(odd)::after {
+    background-color: #ffffff;
+  }
+
+  .title_subsection {
+    font-size: var(--section-subtitle-fsz_tablet);
+    letter-spacing: 1.6px;
+  }
+
+  .title_subsection::before {
+    vertical-align: 45%;
+
+    font-size: 18px;
+  }
+
+  .title_subsection::after {
+    bottom: 12px;
+
+    width: 16px;
+
+    border-radius: 3px;
+    border-width: 3px;
+  }
+
+  .subsection__text {
+    max-width: 443px;
+    margin-top: 14px;
+
+    font-size: var(--subsection-paragraph-fsz_tablet);
+    line-height: 1.75;
+  }
+
 }
