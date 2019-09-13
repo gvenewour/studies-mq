@@ -717,6 +717,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .athletes__subsection, .athletes__title {
+    padding-left: calc(50% + 50px);
+  }
+
   .benefits__item {
     position: relative;
 
@@ -841,10 +845,6 @@ body {
     right: 53%;
 
     overflow-x: visible;
-  }
-
-  .athletes__subsection, .athletes__title {
-    padding-left: calc(50% + 50px);
   }
 
   .subsection, .subsection:first-child {
