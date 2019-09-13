@@ -57,15 +57,9 @@
         <h2 class="title title_section athletes__title">Athletes</h2>
         <div class="athletes__thumbnail-wrap">
           <picture class="thumbnail athletes__thumbnail">
-            <source
-              media="(max-width: 767px)"
-              srcset="img/athletes/footballer_192.png">
-            <source
-              media="(min-width: 768px)"
-              srcset="img/athletes/footballer_497.png">
-            <source
-              media="(min-width: 1024px)"
-              srcset="img/athletes/footballer_566.png">
+            <source type="image/png" media="(max-width: 767px)"  srcset="img/athletes/footballer_192.png">
+            <source type="image/png" media="(min-width: 768px) and (max-width: 1919px)"  srcset="img/athletes/footballer_497.png">
+            <source type="image/png" media="(min-width: 1920px)" srcset="img/athletes/footballer_566.png">
             <img  src="img/athletes/footballer_192.png" alt="Footballer image">
           </picture>
         </div>
@@ -94,15 +88,9 @@
         <h2 class="title title_section players__title">Players</h2>
         <div class="players__thumbnail-wrap">
           <picture class="thumbnail players__thumbnail">
-            <source
-              media="(max-width: 767px)"
-              srcset="img/players/basketballer_302.png">
-            <source
-              media="(min-width: 768px)"
-              srcset="img/players/basketballer_436.png">
-            <source
-              media="(min-width: 1024px)"
-              srcset="img/players/basketballer_991.png">
+            <source type="image/png" media="(max-width: 767px)"  srcset="img/players/basketballer_302.png">
+            <source type="image/png" media="(min-width: 768px) and (max-width: 1919px)"  srcset="img/players/basketballer_436.png">
+            <source type="image/png" media="(min-width: 1920px)" srcset="img/players/basketballer_991.png">
             <img src="img/players/basketballer_302.png" alt="Basketballer image">
           </picture>
         </div>
@@ -152,16 +140,10 @@
         <li class="benefits__item">
           <div class="benefits__thumbnail-wrap">
             <picture class="thumbnail benefits__thumbnail">
-              <source
-                media="(max-width: 767px)"
-                srcset="img/benefits/contacts/find-contact_640.jpg">
-              <source
-                media="(min-width: 768px)"
-                srcset="img/benefits/contacts/find-contact.jpg">
+              <source type="image/jpg" media="(max-width: 767px)"  srcset="img/benefits/contacts/find-contact_640.jpg">
+              <source type="image/jpg" media="(min-width: 768px) and (max-width: 1919px)"  srcset="img/benefits/contacts/find-contact.jpg">
               <!-- NOTE: potentially required breakpoint at 960 > -->
-              <source
-                media="(min-width: 1024px)"
-                srcset="img/benefits/contacts/find-contact_1024.jpg">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="img/benefits/contacts/find-contact_1024.jpg">
               <img class="benefits__fallback" src="img/benefits/contacts/find-contact_1024.jpg" alt="People talking and looking at a device">
             </picture>
           </div>
@@ -173,16 +155,10 @@
         <li class="benefits__item">
           <div class="benefits__thumbnail-wrap">
             <picture class="thumbnail benefits__thumbnail">
-              <source
-                media="(max-width: 767px)"
-                srcset="img/benefits/work/work-it_640.jpg">
-              <source
-                media="(min-width: 768px)"
-                srcset="img/benefits/work/work-it.jpg">
+              <source type="image/jpg" media="(max-width: 767px)" srcset="img/benefits/work/work-it_640.jpg">
+              <source type="image/jpg" media="(min-width: 768px) and (max-width: 1919px)" srcset="img/benefits/work/work-it.jpg">
               <!-- NOTE: potentially required breakpoint at 960 > -->
-              <source
-                media="(min-width: 1024px)"
-                srcset="img/benefits/work/work-it_1024.jpg">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="img/benefits/work/work-it_1024.jpg">
               <img class="benefits__fallback" src="img/benefits/work/work-it_1024.jpg" alt="Basketballer image">
             </picture>
           </div>
@@ -196,17 +172,19 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="footer__logo-wrap">
-        <a class="link logo logo_short" href="#">
-            <object type="image/svg+xml" data="img/logo/surface_logo.svg" aria-hidden="true">
-              Main Logo
-            </object>
-        </a>
-      </div>
-
-      <div class="footer__title-wrap">
-        <h3 class="title title_footer"><span class="accent">Download</span> app</h3>
-        <h4 class="title subtitle_footer">Show everyone what you can do!</h4>
+      <div class="logo-title-wrap">
+        <div class="footer__logo-wrap">
+          <a class="link logo logo_short" href="#">
+              <object class="logo__object" type="image/svg+xml" data="img/logo/surface_logo.svg" aria-hidden="true">
+                Main Logo
+              </object>
+          </a>
+        </div>
+    
+        <div class="footer__title-wrap">
+          <h3 class="title title_footer"><span class="accent">Download</span> app</h3>
+          <h4 class="title subtitle_footer">Show everyone what you can do!</h4>
+        </div>
       </div>
 
       <div class="cta-wrap footer__cta-wrap">
