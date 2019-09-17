@@ -134,7 +134,13 @@ body {
   padding-top: var(--padding-top_header_mobile);
   padding-bottom: var(--padding-bottom_header_mobile);
 
-  background: var(--bg-header-overlay) url("../img/header/football_767.jpg") top/cover no-repeat;
+  /* NOTE: bug in iOS: mobile Safari and Chrome could not recognise bg-image */
+  /* background: var(--bg-header-overlay) url("../img/header/football_767.jpg") top/cover no-repeat; */
+  background-color: var(--bg-header-overlay);
+  background-image: url("../img/header/football_767.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header::after, .footer::after {
@@ -483,7 +489,13 @@ body {
   padding-top: 94px;
   padding-bottom: 10px;
 
-  background: var(--bg-header-overlay) url("../img/footer/game_767.jpg") top/cover no-repeat;
+  /*NOTE: same bug as with header on iOS
+  /* background: var(--bg-header-overlay) url("../img/footer/game_767.jpg") top/cover no-repeat; */
+  background-color: var(--bg-header-overlay);
+  background-image: url("../img/footer/game_767.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer__logo-wrap {
