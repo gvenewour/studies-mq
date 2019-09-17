@@ -1,9 +1,3 @@
 .svg-icon {
   fill: #ffffff;
 }
-
-@media(min-width: 920px) {
-  .svg-icon:hover {
-    fill: red;
-  }
-}
