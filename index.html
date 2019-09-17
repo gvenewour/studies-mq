@@ -10,11 +10,11 @@
 <body>
   <header class="header">
     <div class="container">
-      <a class="link logo logo_main" href="#">
+      <div class="logo logo_main">
         <object type="image/svg+xml" data="img/logo/surface_logo_text.svg" aria-hidden="true">
           Main Logo
         </object>
-      </a>
+      </div>
       <h1 class="header__title-wrap">
         <span class="title title_header header__title">Be recruited</span>
         <span class="title title_header header__subtitle">Play college sports</span>
@@ -55,7 +55,7 @@
     <section class="athletes">
       <h2 class="title title_section athletes__title container">Athletes</h2>
       <div class="athletes__thumbnail-wrap">
-        <picture class="thumbnail athletes__thumbnail">
+        <picture class="thumbnail athletes__thumbnail" role="presentation">
           <source type="image/png" media="(max-width: 767px)"  srcset="img/athletes/footballer_192.png">
           <source type="image/png" media="(min-width: 768px) and (max-width: 1919px)"  srcset="img/athletes/footballer_497.png">
           <source type="image/png" media="(min-width: 1920px)" srcset="img/athletes/footballer_566.png">
@@ -89,7 +89,7 @@
     <section class="players">
       <h2 class="title title_section players__title container">Players</h2>
       <div class="players__thumbnail-wrap">
-        <picture class="thumbnail players__thumbnail">
+        <picture class="thumbnail players__thumbnail" role="presentation">
           <source type="image/png" media="(max-width: 767px)"  srcset="img/players/basketballer_302.png">
           <source type="image/png" media="(min-width: 768px) and (max-width: 1919px)"  srcset="img/players/basketballer_436.png">
           <source type="image/png" media="(min-width: 1920px)" srcset="img/players/basketballer_991.png">
@@ -124,7 +124,7 @@
       <ol class="list">
         <li class="benefits__item">
           <div class="benefits__thumbnail-wrap">
-            <picture>
+            <picture role="presentation">
               <source
                 media="(max-width: 767px)"
                 srcset="img/benefits/social/be-active_640.jpg">
@@ -146,12 +146,12 @@
         </li>
         <li class="benefits__item">
           <div class="benefits__thumbnail-wrap">
-            <picture>
+            <picture role="presentation">
               <source type="image/jpg" media="(max-width: 767px)"  srcset="img/benefits/contacts/find-contact_640.jpg">
               <source type="image/jpg" media="(min-width: 768px) and (max-width: 1919px)"  srcset="img/benefits/contacts/find-contact.jpg">
               <!-- NOTE: potentially required breakpoint at 960 > -->
               <source type="image/jpg" media="(min-width: 1920px)" srcset="img/benefits/contacts/find-contact_1024.jpg">
-              <img class="benefits__fallback" src="img/benefits/contacts/find-contact_1024.jpg" alt="People talking and looking at a device">
+              <img class="benefits__fallback" src="img/benefits/contacts/find-contact_1024.jpg" alt="People are talking and looking at a device">
             </picture>
           </div>
           <div class="container benefits__content">
@@ -161,12 +161,12 @@
         </li>
         <li class="benefits__item">
           <div class="benefits__thumbnail-wrap">
-            <picture>
+            <picture role="presentation">
               <source type="image/jpg" media="(max-width: 767px)" srcset="img/benefits/work/work-it_640.jpg">
               <source type="image/jpg" media="(min-width: 768px) and (max-width: 1919px)" srcset="img/benefits/work/work-it.jpg">
               <!-- NOTE: potentially required breakpoint at 960 > -->
               <source type="image/jpg" media="(min-width: 1920px)" srcset="img/benefits/work/work-it_1024.jpg">
-              <img class="benefits__fallback" src="img/benefits/work/work-it_1024.jpg" alt="Basketballer image">
+              <img class="benefits__fallback" src="img/benefits/work/work-it_1024.jpg" alt="A football team is celebrating a win">
             </picture>
           </div>
           <div class="container benefits__content">
@@ -179,13 +179,13 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="logo-title-wrap">
+      <div class="logo-title-wrap" aria-hidden="true">
         <div class="footer__logo-wrap">
-          <a class="link logo logo_short" href="#">
-              <object class="logo__object" type="image/svg+xml" data="img/logo/surface_logo.svg" aria-hidden="true">
-                Main Logo
-              </object>
-          </a>
+          <div class="logo logo_short">
+            <object class="logo__object" type="image/svg+xml" data="img/logo/surface_logo.svg">
+              Main Logo
+            </object>
+          </div>
         </div>
     
         <div class="footer__title-wrap">
@@ -193,6 +193,7 @@
           <h4 class="title subtitle_footer">Show everyone what you can do!</h4>
         </div>
       </div>
+      <!-- logo-title-wrap -->
 
       <div class="cta-wrap footer__cta-wrap">
         <a class="link link_cta" href="#">
@@ -209,24 +210,24 @@
         </a>
 
         <a class="link link_cta" href="#">
-            <div class="link__content">
-              <object class="link__icon" type="image/svg+xml" data="img/logo/google-play.svg" aria-hidden="true">
-                Google Play Logo
-              </object>
-      
-              <div class="link__text">
-                <div class="title title_cta">Get it on</div>
-                <div class="title">Google Play</div>
-              </div>
+          <div class="link__content">
+            <object class="link__icon" type="image/svg+xml" data="img/logo/google-play.svg" aria-hidden="true">
+              Google Play Logo
+            </object>
+    
+            <div class="link__text">
+              <div class="title title_cta">Get it on</div>
+              <div class="title">Google Play</div>
             </div>
-          </a>
+          </div>
+        </a>
       </div>
 
-      <a class="link logo logo_main" href="#">
-        <object type="image/svg+xml" data="img/logo/surface_logo_text.svg" aria-hidden="true">
+      <div class="logo logo_main" aria-hidden="true">
+        <object type="image/svg+xml" data="img/logo/surface_logo_text.svg">
           Main Logo
         </object>
-      </a>
+      </div>
     </div>
   </footer>
 </body>

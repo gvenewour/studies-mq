@@ -148,6 +148,8 @@ body {
 
   background-color: var(--bg-header-overlay);
   opacity: 0.8;
+  -moz-opacity: 0.8; /* Firefox and Mozilla browsers */
+  -webkit-opacity: 0.8; /* WebKit browser e.g. Safari */
 }
 
 .container {
@@ -160,8 +162,6 @@ body {
 }
 
 .logo {
-  display: block;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -780,7 +780,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .link_cta:hover {
+  .link:hover {
     box-shadow: 8px 8px 10px var(--color-section-text-title) inset;
     filter: drop-shadow(8px 8px 10px var(--color-section-text-title));
 
@@ -988,6 +988,7 @@ body {
 
   .footer {
     padding-top: 215px;
+    padding-bottom: 52px;
   }
 
   .footer__logo-wrap {
